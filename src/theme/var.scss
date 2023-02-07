@@ -1,0 +1,71 @@
+/* 改变 ui 主题色变量 */
+$--color-primary: #20353f;
+$--color-text-primary: #333333;
+
+$color-success:#67C23A;
+$color-warning: #E6A23C;
+$color-error: #F56C6C;
+$color-info: #909399;
+$color-border: #DCDFE6;
+
+$color-bg: #e9edf2;
+
+// 菜单样式
+
+// 子菜单背景色
+$color-child-menu: #132730;
+// 选中菜单颜色
+$color-select-menu: #28414c;
+// 菜单文字颜色
+$color-menu-text-color: #fff;
+
+// page-layout-header
+// header 高度
+$header-height: 55px;
+// header 边距
+$header-padding: 0px 10px;
+// header 背景色
+$header-bg-color: #20353f;
+// header 对比色， 主要用于 文字
+$header-bg-color-revers: #fff;
+
+// page-layout-side
+// 左边导航宽度
+$side-full-width: 250px;
+// 左边导航折叠宽度
+$side-collapse-width: 65px;
+// 左边导航高度
+$side-scroll-height: calc(100% - #{$header-height});
+// 左边盗汗背景色
+$side-bg-color: #20353f;
+
+// page-layout-content
+// 右边内容区域背景色
+$content-bg-color: #e9edf2;
+// 右边内容区域高度
+$content-height: calc(100% - #{$header-height});
+// 右边内容区域圆角
+$content-border-radius: 6px 0 0 0;
+// 右边内容区域宽度
+$content-full-width: calc(100% - #{$side-full-width});
+// 右边内容区域折叠时宽度
+$content-collapse-width: calc(100% - #{$side-collapse-width});
+// 右边内容区域边距
+$content-padding: 10px;
+
+// page-layout-content view
+$view-padding: 10px;
+
+// page-layout-content scroll
+
+$reduce-padding: calc(#{$view-padding} * 2);
+// 右边滚动区域宽度
+$scroll-full-width: calc(100vw - #{$side-full-width} - #{$reduce-padding});
+// 右边滚动区域折叠时宽度
+$scroll-collapse-width: calc(100vw - #{$side-collapse-width} - #{$reduce-padding});
+// 右边滚动区域最小宽度
+$scroll-min-width: 500px;
+// 右边滚动区域最小高度
+$scroll-min-height: calc(100vh - #{$header-height} - #{$view-padding} * 2 - #{$content-padding} * 2);
+
+

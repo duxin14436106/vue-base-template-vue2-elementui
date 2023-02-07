@@ -1,0 +1,21 @@
+// 阴影
+@mixin box-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+
+@mixin box-shadow-single {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+// 文字超出隐藏
+@mixin text-hidden($line: 1) {
+    overflow: hidden;
+    @if $line == 1 {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    } @else if $line > 1 {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: $line;
+    }
+  }

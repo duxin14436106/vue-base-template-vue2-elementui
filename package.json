@@ -1,0 +1,63 @@
+{
+  "name": "vue-base-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "patch-package",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "prepare": "husky install",
+    "lint": "eslint src --fix --ext .js,.ts,.jsx,.tsx,.vue && prettier --write --ignore-unknown",
+    "commit": "cz"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,tsx,jsx}": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "core-js": "^3.6.5",
+    "element-ui": "2.15.9",
+    "nanoid": "^4.0.0",
+    "object-to-formdata": "^4.4.2",
+    "qs": "^6.11.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuescroll": "4.17.5",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.13",
+    "@vue/cli-plugin-vuex": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "babel-plugin-component": "^1.1.1",
+    "commitizen": "^4.2.5",
+    "css-unicode-loader": "^1.0.3",
+    "cz-customizable": "^6.9.1",
+    "eslint": "^8.21.0",
+    "eslint-define-config": "^1.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^13.0.3",
+    "patch-package": "^6.4.7",
+    "prettier": "^2.7.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "sass-migrator": "^1.5.6",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
